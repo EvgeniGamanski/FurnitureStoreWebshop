@@ -1,1 +1,19 @@
-<p>products works!</p>
+<div class="container">
+    <div class="row">
+        <h1 style="padding-top:50px; text-align: center;">Products</h1>
+        <p style="padding-top:30px;padding-bottom:30px; text-align: center;">Try one of our sofas and things will never be the same. Taking a break in front of the TV, curling up with a good book, and having company round is going to get even better. Relax, make yourself comfortable, and sink into your new favourite spot. Our sofas come in a range of plush, stylish fabrics with bold design. We use easy-care and long-lasting materials to make sure your sofa will be looking as good as it did on the day it arrived for years to come. Ethically and locally handcrafted, using sustainable wood and production practices.</p>
+        <br>
+        <hr>
+        <ng-container *ngFor="let item of productslist">
+        <div class="card col-md-3">
+
+            <img src="{{item.image}}" alt="">
+            <h5 style="white-space:nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+            <p style="white-space:nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+            <p><strong>Price:</strong> {{item.price}} $</p>
+            <button class="btn btn-light shadow-sm" (click)="addToCart(item)" >Add To Cart</button>
+            
+        </div>
+    </ng-container>
+    </div>
+</div> 

@@ -6,11 +6,12 @@
         <button routerLink="/products" class="btn btn-dark" style="margin-left: 40px;padding-top:4px"><strong style="color:white;font-size:25px;">Products </strong></button>
         <button routerLink="/new-collection" class="btn btn-dark" style="margin-left: 40px;padding-top:4px"><strong style="color:white;font-size:25px;">New Collection</strong></button>
     </div>
+    
     <button class="btn btn-dark">
         <i style="font-size:30px;" routerLink="/cart" class="fas fa-shopping-cart"> </i> 
         
         <!-- class="fas fa-cart-plus" -->
-        <div style="font-size:10px" class="badge bg-dark">0</div>
+        <div style="font-size:10px" class="badge bg-dark">{{totalItem}}</div>
     </button>
     </div> 
 </header>  

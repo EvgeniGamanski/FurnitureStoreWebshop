@@ -1,19 +1,90 @@
 {
-  "posts": [
+  "products": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "description": "With its soft shapes, modern expressions and durable light cover, this sofa with a chaise longue is a perfect combination of function and comfort. Also comes without a chaise longue if you have less space.",
+      "id": "1",
+      "image": "https://img.edilportale.com/product-thumbs/h_EDO-arflex-642531-rel202d5c50.jpg",
+      "price": 250,
+      "title": "Luxurous Sofa"
+    },
+    {
+      "description": "Comfortable, with just the right sit Sherrill Furniture Lounge Chairs offer the finest fabrics and custom options you can find. Sherrill offers a wide array of styles, from traditional to contemporary.",
+      "id": "2",
+      "image": "https://img.edilportale.com/product-thumbs/b_NOMAD-Easy-chair-TRIB%C3%99-366634-rel393a2625.jpg",
+      "price": 200,
+      "title": "Easy Chair"
+    },
+    {
+      "description": "Perfect in pairs, Niels Swivel chairs encourage conversation and enable functionality for any room. The finest mechanisms are incorporated into our hand-crafted wood frames. Of course, you can create a one-of-a-kind seating arrangement with our wide array of fabrics and finishes.",
+      "id": "3",
+      "image": "https://img.edilportale.com/product-thumbs/b_niels-swivel-easy-chair-sicis-607707-rel260213d7.jpg",
+      "price": 210,
+      "title": "Niels Swivel"
+    },
+    {
+      "description": "Built from the best, made in the USA.With skill and care, we blend traditional American hand craftsmanship with modern manufacturing methods. The result is unparalleled custom-made upholstery to fit almost any need.",
+      "id": "4",
+      "image": "https://img.edilportale.com/product-thumbs/b_grasshopper-height-adjustable-office-desk-knoll-international-618109-rel812e428d.jpg",
+      "price": 130,
+      "title": "Adjustable Office Desk"
+    },
+    {
+      "description": "Perfect for extra seating and added style. Mitered, tufted, skirted or fringed, Sherrill has the look for you. Kick back, relax and put your feet up with an ottoman that is just as original as you are.",
+      "id": "5",
+      "image": "https://img.edilportale.com/product-thumbs/b_TOUCH-DOWN-UNIT-Molteni-C-554514-rel2ca31a8c.jpg",
+      "price": 180,
+      "title": "Molteni"
+    },
+    {
+      "description": "Sleeper sofas are a great solution for extra overnight guests. And with the best mechanisms and mattresses in the industry, your guest will enjoy a good night sleep.",
+      "id": "6",
+      "image": "https://img.edilportale.com/product-thumbs/b_MONCLOUD-Cassina-637389-rel9d3c214d.jpg",
+      "price": 160,
+      "title": "Moncloud Cassina"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "new":[
+      {
+        "description": "Inspired by the beauty and tradition of English upholstery design, our Morris sofa collection boasts an array of timeless and classic details that makes it just a little bit special. From the sumptuously deep feather encore seat cushions that provide luxurious comfort, to the low and convenient arm height.",
+        "id": "1",
+        "image": "https://cotswoldco-cdn.azureedge.net/products/4036.172_fmwtc4uu.6.jpg",
+        "price": 220,
+        "title": "Morris Scatter Back"
+      },
+      {
+        "description": "One of our more contemporary sofa styles, the Talbot, much like our Morris, features a number of classic details that just makes it a little more special. The deep button back gives a nod to traditional design, while the sumptuously soft feather seat cushions promise luxurious comfort.",
+        "id": "2",
+        "image": "https://cotswoldco-cdn.azureedge.net/upholsteryrange/4021.183-main.jpg",
+        "price": 120,
+        "title": "Talbot"
+      },
+      {
+        "description": "A simple and classic design, the Harriet is a scroll arm armchair intended for comfort and cosiness. For long afternoons spent lounging or curled up with a good book. For popping in the conservatory or by the window in the living room.",
+        "id": "3",
+        "image": "https://cotswoldco-cdn.azureedge.net/products/4009.021-main.5.jpg", 
+        "price": 270,
+        "title": "Harriet"
+      },
+      {
+        "description": "One of our more sophisticated sofa shapes inspired by the classic Chesterfield, Walker’s low back and traditional scrolled arms make for sink-in comfort. Sofas include two matching scatter cushions.",
+        "id": "4",
+        "image": "https://cotswoldco-cdn.azureedge.net/upholsteryrange/4027.139-main.jpg", 
+        "price": 150,
+        "title": "Walker"
+      },
+      {
+        "description": "Inspired by traditional English upholstery, this classic beauty is our take on the much-loved Chesterfield design. Its exaggerated scroll arms, pleated details and textured buttoning make for a piece that undoubtedly takes centre stage in any room.",
+        "id": "5",
+        "image": "https://cotswoldco-cdn.azureedge.net/upholsteryrange/37-harris-chesterfield-fw7bleyc.jpg",
+        "price": 110,
+        "title": "Harris Chesterfield"
+      },
+      {
+        "description": "With gently sloping arms and a handy high back, our Mabel contemporary armchair offers the optimum spot to relax and unwind. A simple and modest design with clean, soft lines, it exudes a subtle elegance and hint of effortless contemporary charm that makes it the perfect upholstery addition for your existing living room arrangement.",
+        "id": "6",
+        "image": "https://cotswoldco-cdn.azureedge.net/products/4011.054-main.6.jpg",
+        "price": 160,
+        "title": "Mabel"
+      }
+  ]
 }
