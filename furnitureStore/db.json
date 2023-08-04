@@ -1,6 +1,14 @@
 {
-  "user":[
-
+  "user": [
+    {
+      "id": "ivan123",
+      "name": "ivan123",
+      "password": "ivan123",
+      "email": "ivan123@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isActive": ""
+    }
   ],
   "products": [
     {
@@ -46,48 +54,48 @@
       "title": "Moncloud Cassina"
     }
   ],
-  "new":[
-      {
-        "description": "Inspired by the beauty and tradition of English upholstery design, our Morris sofa collection boasts an array of timeless and classic details that makes it just a little bit special. From the sumptuously deep feather encore seat cushions that provide luxurious comfort, to the low and convenient arm height.",
-        "id": "1",
-        "image": "https://cotswoldco-cdn.azureedge.net/products/4036.172_fmwtc4uu.6.jpg",
-        "price": 220,
-        "title": "Morris Scatter Back"
-      },
-      {
-        "description": "One of our more contemporary sofa styles, the Talbot, much like our Morris, features a number of classic details that just makes it a little more special. The deep button back gives a nod to traditional design, while the sumptuously soft feather seat cushions promise luxurious comfort.",
-        "id": "2",
-        "image": "https://cotswoldco-cdn.azureedge.net/upholsteryrange/4021.183-main.jpg",
-        "price": 120,
-        "title": "Talbot"
-      },
-      {
-        "description": "A simple and classic design, the Harriet is a scroll arm armchair intended for comfort and cosiness. For long afternoons spent lounging or curled up with a good book. For popping in the conservatory or by the window in the living room.",
-        "id": "3",
-        "image": "https://cotswoldco-cdn.azureedge.net/products/4009.021-main.5.jpg", 
-        "price": 270,
-        "title": "Harriet"
-      },
-      {
-        "description": "One of our more sophisticated sofa shapes inspired by the classic Chesterfield, Walker’s low back and traditional scrolled arms make for sink-in comfort. Sofas include two matching scatter cushions.",
-        "id": "4",
-        "image": "https://cotswoldco-cdn.azureedge.net/upholsteryrange/4027.139-main.jpg", 
-        "price": 150,
-        "title": "Walker"
-      },
-      {
-        "description": "Inspired by traditional English upholstery, this classic beauty is our take on the much-loved Chesterfield design. Its exaggerated scroll arms, pleated details and textured buttoning make for a piece that undoubtedly takes centre stage in any room.",
-        "id": "5",
-        "image": "https://cotswoldco-cdn.azureedge.net/upholsteryrange/37-harris-chesterfield-fw7bleyc.jpg",
-        "price": 110,
-        "title": "Harris Chesterfield"
-      },
-      {
-        "description": "With gently sloping arms and a handy high back, our Mabel contemporary armchair offers the optimum spot to relax and unwind. A simple and modest design with clean, soft lines, it exudes a subtle elegance and hint of effortless contemporary charm that makes it the perfect upholstery addition for your existing living room arrangement.",
-        "id": "6",
-        "image": "https://cotswoldco-cdn.azureedge.net/products/4011.054-main.6.jpg",
-        "price": 160,
-        "title": "Mabel"
-      }
+  "new": [
+    {
+      "description": "Inspired by the beauty and tradition of English upholstery design, our Morris sofa collection boasts an array of timeless and classic details that makes it just a little bit special. From the sumptuously deep feather encore seat cushions that provide luxurious comfort, to the low and convenient arm height.",
+      "id": "1",
+      "image": "https://cotswoldco-cdn.azureedge.net/products/4036.172_fmwtc4uu.6.jpg",
+      "price": 220,
+      "title": "Morris Scatter Back"
+    },
+    {
+      "description": "One of our more contemporary sofa styles, the Talbot, much like our Morris, features a number of classic details that just makes it a little more special. The deep button back gives a nod to traditional design, while the sumptuously soft feather seat cushions promise luxurious comfort.",
+      "id": "2",
+      "image": "https://cotswoldco-cdn.azureedge.net/upholsteryrange/4021.183-main.jpg",
+      "price": 120,
+      "title": "Talbot"
+    },
+    {
+      "description": "A simple and classic design, the Harriet is a scroll arm armchair intended for comfort and cosiness. For long afternoons spent lounging or curled up with a good book. For popping in the conservatory or by the window in the living room.",
+      "id": "3",
+      "image": "https://cotswoldco-cdn.azureedge.net/products/4009.021-main.5.jpg",
+      "price": 270,
+      "title": "Harriet"
+    },
+    {
+      "description": "One of our more sophisticated sofa shapes inspired by the classic Chesterfield, Walker’s low back and traditional scrolled arms make for sink-in comfort. Sofas include two matching scatter cushions.",
+      "id": "4",
+      "image": "https://cotswoldco-cdn.azureedge.net/upholsteryrange/4027.139-main.jpg",
+      "price": 150,
+      "title": "Walker"
+    },
+    {
+      "description": "Inspired by traditional English upholstery, this classic beauty is our take on the much-loved Chesterfield design. Its exaggerated scroll arms, pleated details and textured buttoning make for a piece that undoubtedly takes centre stage in any room.",
+      "id": "5",
+      "image": "https://cotswoldco-cdn.azureedge.net/upholsteryrange/37-harris-chesterfield-fw7bleyc.jpg",
+      "price": 110,
+      "title": "Harris Chesterfield"
+    },
+    {
+      "description": "With gently sloping arms and a handy high back, our Mabel contemporary armchair offers the optimum spot to relax and unwind. A simple and modest design with clean, soft lines, it exudes a subtle elegance and hint of effortless contemporary charm that makes it the perfect upholstery addition for your existing living room arrangement.",
+      "id": "6",
+      "image": "https://cotswoldco-cdn.azureedge.net/products/4011.054-main.6.jpg",
+      "price": 160,
+      "title": "Mabel"
+    }
   ]
 }
