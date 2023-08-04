@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+import { AuthService } from '../service/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -7,4 +10,25 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
+  constructor(private builder:FormBuilder, private router: Router, private service: AuthService ){}
+  registerform=this.builder.group({
+    id:this.builder.control('',Validators.compose([Validators.required, Validators.minLength(6)])),
+    name: this.builder.control('',Validators.required),
+    password:this.builder.control('',Validators.compose([Validators.required])),
+    email:this.builder.control('',Validators.compose([Validators.required, Validators.email])),
+    gender: this.builder.control('male'),
+    role:this.builder.control(''),
+    isActive:this.builder.control('')
+
+  });
+  proceedRegister(){
+    if(this.registerform.valid){
+      this.service.RegisterUser(this.registerform.value).subscribe(result=>{
+        alert("Registered successfully!")
+        this.router.navigate(['login'])
+      });
+    }else{
+      alert("Please enter valid data!")
+    }
+  }
 }
