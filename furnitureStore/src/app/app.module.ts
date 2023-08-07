@@ -7,9 +7,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { ProductsComponent } from './components/products/products.component';
 import { CartComponent } from './components/cart/cart.component';
 import { NgToastModule } from 'ng-angular-popup';
-import { NewComponent } from './components/new/new.component';
 import { RegisterComponent } from './register/register.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NewComponent } from './components/new/new.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  
 
 import { MatCardModule } from '@angular/material/card';  
 import { MatButtonModule } from '@angular/material/button';  
@@ -19,6 +19,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './login/login.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { NewProductDetailComponent } from './components/new-product-detail/new-product-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,11 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     ProductsComponent,
     CartComponent,
-    NewComponent,
     RegisterComponent,
-    LoginComponent
+    NewComponent,
+    LoginComponent,
+    ProductDetailComponent,
+    NewProductDetailComponent
   ],
   imports: [
     BrowserModule,
