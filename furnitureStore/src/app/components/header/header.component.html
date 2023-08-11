@@ -2,14 +2,14 @@
     <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="navbar-brand align-item-center d-flex">
         <i style="font-size:30px;color:white;margin-left:62px;margin-right: 20px;margin-top:8px;" class="fas fa-tag"></i>
-        <strong style="color:white;font-size:30px;padding-top:12px">Furniture Store Sofia </strong>
+        <strong routerLink="/home" style="color:white;font-size:30px;padding-top:12px;cursor: pointer;">Furniture House Sofia </strong>
         <button routerLink="/products" class="btn btn-dark" style="margin-left: 40px;padding-top:4px"><strong style="color:white;font-size:25px;">Products </strong></button>
         <button routerLink="/new-collection" class="btn btn-dark" style="margin-left: 40px;padding-top:4px"><strong style="color:white;font-size:25px;">New Collection</strong></button>
-        <button *ngIf="!this.user.isLogged" routerLink="/register" class="btn btn-light" style="margin-left: 400px;padding-top:4px"><strong style="color:black;font-size:25px;">Register/Login</strong></button>
-        <button *ngIf="this.user.isLogged" (click)="logout()" routerLink="/register" class="btn btn-light" style="margin-left: 400px;padding-top:4px"><strong style="color:black;font-size:25px;">Logout</strong></button>
+        <button *ngIf="!this.user.Check()" routerLink="/register" class="btn btn-light" style="margin-left: 400px;padding-top:4px"><strong style="color:black;font-size:25px;">Register/Login</strong></button>
+        <button *ngIf="this.user.Check()" (click)="logout()" routerLink="/register" class="btn btn-light" style="margin-left: 400px;padding-top:4px"><strong style="color:black;font-size:25px;">Logout</strong></button>
     </div>
 
-    <button class="btn btn-dark" *ngIf="this.user.isLogged">
+    <button class="btn btn-dark" *ngIf="this.user.Check()">
         <i style="font-size:30px;" routerLink="/cart" class="fas fa-shopping-cart"> </i> 
         <div style="font-size:10px" class="badge bg-dark">{{totalItem}}</div>
     </button>

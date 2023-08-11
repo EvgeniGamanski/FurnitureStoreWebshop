@@ -23,7 +23,7 @@ export class ProductsComponent implements OnInit {
     }); 
   }
 
-  addToCart(item:any){
+  addToCart(item:any){ 
     this.toast.success({detail:'Added to cart',summary:'Item has been added', duration:1000})
     this.cart.addToCart(item);
   }

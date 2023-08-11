@@ -4,8 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserService {
-
-  constructor() { }
-
-  isLogged:boolean=false;
+  Check(){
+    if(sessionStorage.getItem('userData')){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
 }

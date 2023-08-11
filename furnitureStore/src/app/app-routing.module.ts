@@ -7,12 +7,15 @@ import { NewComponent } from './components/new/new.component';
 import { LoginComponent } from './login/login.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { NewProductDetailComponent } from './components/new-product-detail/new-product-detail.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  {path: '', component: ProductsComponent},
+  {path: '', component: HomeComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
-  {path: '',redirectTo:'products',pathMatch:'full'},
+  {path: '',redirectTo:'home',pathMatch:'full'},
+  {path:'products',component:ProductsComponent},
+  {path:'home',component:HomeComponent},
   {path:'products',component:ProductsComponent},
   {path:'cart',component:CartComponent},  
   {path:'new-collection',component:NewComponent},

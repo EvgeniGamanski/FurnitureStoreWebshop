@@ -10,16 +10,16 @@ import { NgToastService } from 'ng-angular-popup';
 })
 export class HeaderComponent implements OnInit {
   public totalItem=0;
+  isLogged:boolean=sessionStorage["userData"];
   constructor(private cart: CartService, public user: UserService,private toast: NgToastService){
   }
   logout(){
-    this.user.isLogged=false;
+    sessionStorage.clear();
   }
   ngOnInit(): void {
     this.cart.GetProduct().subscribe(res=>{
       this.totalItem = res.length;
     })
   }
-
 }
 

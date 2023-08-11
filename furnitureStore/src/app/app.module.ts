@@ -21,6 +21,7 @@ import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './login/login.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { NewProductDetailComponent } from './components/new-product-detail/new-product-detail.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NewProductDetailComponent } from './components/new-product-detail/new-p
     NewComponent,
     LoginComponent,
     ProductDetailComponent,
-    NewProductDetailComponent
+    NewProductDetailComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

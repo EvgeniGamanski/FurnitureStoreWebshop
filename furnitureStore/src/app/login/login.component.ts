@@ -30,9 +30,9 @@ export class LoginComponent {
             sessionStorage.setItem('role',this.result.role);
             this.router.navigate(['products']);
           }else{
-            alert("Logged in successfully!");
             this.router.navigate(['products']); 
-            this.user.isLogged=true;
+            let itemName='userData'
+            sessionStorage.setItem(itemName, JSON.stringify(this.loginform.value));
           }
         }else{
           alert("Not valid credentials!")
