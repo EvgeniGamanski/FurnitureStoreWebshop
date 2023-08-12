@@ -57,7 +57,8 @@
             <li><h2><svg style="fill: green;width:18px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>&nbsp;&nbsp;&nbsp;Receive 5% discount on your first order</h2></li>
         </ul>
         <br>
-        <h1 style="font-weight: 200;color:black; text-align: center;">We are sure that we can fullfill your needs and give you pure satisfaction. Click the link below to start the journey of furnishing your dream home!</h1>
+        <h1 style="font-weight: 200;color:black; text-align: center;">We are sure that we can fullfill your needs and give you pure satisfaction.</h1>
+        <h1 *ngIf="!this.user.Check()" style="font-weight: 200;color:black; text-align: center;">Click the link below to start the journey of furnishing your dream home!</h1>
         <br>
         <button *ngIf="!this.user.Check()" routerLink="/register" style="height:80px;width:250px;margin-left: 30%;" class="btn btn-dark">Join Us Now!</button> 
     </div>
