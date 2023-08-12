@@ -14,3 +14,6 @@ The logged in user can:
  - See items in cart
  - Make an order
  - Make a product request, delete a product request, edit a product request
+
+Here are screenshots of the project:
+![image](https://github.com/EvgeniGamanski/FurnitureStoreWebshop/assets/114442045/d3d4ef8b-6ce2-49cd-9c71-1aed94e0c3f4)
