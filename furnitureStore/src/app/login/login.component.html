@@ -7,10 +7,12 @@
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Username</mat-label>
                 <input matInput formControlName="id">
+                <mat-error *ngIf="this.loginform.controls.id.hasError('required')">Please enter username</mat-error>
             </mat-form-field>
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Password</mat-label>
                 <input type="password" matInput formControlName="password">
+                <mat-error *ngIf="this.loginform.controls.password.hasError('required')">Please enter password</mat-error>
             </mat-form-field>
 
             <div style="display: flex;">

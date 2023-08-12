@@ -27,6 +27,7 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { UpdateProductComponent } from './components/update-product/update-product.component';
 import { ViewProductComponent } from './components/view-product/view-product.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { FooterComponent } from './components/footer/footer.component';
     CheckoutComponent,
     UpdateProductComponent,
     ViewProductComponent,
-    FooterComponent
+    FooterComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

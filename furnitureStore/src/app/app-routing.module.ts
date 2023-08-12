@@ -13,6 +13,7 @@ import { ViewProductComponent } from './components/view-product/view-product.com
 import { UpdateProductComponent } from './components/update-product/update-product.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { AuthGuard } from './auth.guard';
+import { ErrorComponent } from './components/error/error.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path:'details/:productId',component:ProductDetailComponent},
   {path:'newdetails/:productId',component:NewProductDetailComponent},
   {path:'checkout',component:CheckoutComponent, canActivate:[AuthGuard]},
+  {path:'**',component:ErrorComponent},
 ];
 
 @NgModule({
