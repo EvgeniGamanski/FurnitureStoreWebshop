@@ -1,12 +1,12 @@
-<nav class="navbar bg-dark">
-    <div class="container-fluid">
-        <a style="color: white; margin-left: 40%; font-size: 22px;">View Product Requests</a>
-        <button routerLink="/add-product" class="btn btn-success">Add a request</button>
-    </div>
-</nav>
-
-<div class="container-fluid" style="max-width: 1000px;">
-    <table class="table mt-4 table-striped table-bordered">
+<div class="container-fluid" style="max-width: 1000px;margin-bottom: 100px;">
+    <br>
+    <br>
+    <h1 style="margin-left:40px;">Here you can add your product requests/inquiries. You will be contacted by the provided email within 2-3 working days after we check for availability.</h1>
+    <br>
+    <button routerLink="/add-product" class="btn btn-dark" style="margin-left: 380px; padding: 15px">Add a request</button>
+    <br>
+    <br>
+    <table class="table mt-4 table-striped table-bordered"> 
         <thead>
             <tr>
                 <th scope="col">Product image</th> 
@@ -23,8 +23,6 @@
                 <td>{{item.productprice}}</td>
                 <td>{{item.productcategory}}</td>
                 <td>
-                    <!-- <i routerLink="/update-product/{{item.id}}" class="fa fa-edit"></i>&nbsp;  
-                    <i (click)="deleteproduct(item.id)" class="fa fa-trash"></i>  -->
                     <button class="btn btn-dark" style="margin-right: 20px;"
                     routerLink="/update-product/{{item.id}}"
                     >Edit

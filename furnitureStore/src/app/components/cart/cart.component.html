@@ -13,7 +13,11 @@
                 <th>Quantity</th>
                 <th>Total</th>
                 <th>Delete</th>
+
             </tr>
+
+
+
         </thead>
 
         <tbody *ngFor="let item of products; let i=index">
@@ -43,6 +47,8 @@
         <button routerLink="/products" style="height:80px;" class="btn btn-dark">Shop More </button> 
         <button (click)="checkout()" style="height:80px;" class="btn btn-dark">Checkout Order </button>
     </div>
+    <br>
+    <br>
 </div>
         </div>
     </div>
