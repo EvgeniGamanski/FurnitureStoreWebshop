@@ -1,19 +1,20 @@
 {
-  "product": [
-    {
-      "productname": "Arm Chair",
-      "productprice": 225,
-      "productcategory": "Furniture",
-      "producturl": "https://www.urbanconcepts.ph/wp/wp-content/uploads/2022/09/sterling-prevwhbg.jpg",
-      "id": 1
-    }
-  ],
+  "product": [],
   "user": [
     {
       "id": "ivan123",
       "name": "ivan123",
       "password": "ivan123",
       "email": "ivan123@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isActive": ""
+    },
+    {
+      "id": "ivo123",
+      "name": "Ivailo",
+      "password": "ivo123",
+      "email": "ivo123@abv.bg",
       "gender": "male",
       "role": "",
       "isActive": ""
