@@ -22,6 +22,10 @@ import { LoginComponent } from './login/login.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { NewProductDetailComponent } from './components/new-product-detail/new-product-detail.component';
 import { HomeComponent } from './components/home/home.component';
+import { AddProductComponent } from './components/add-product/add-product.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { UpdateProductComponent } from './components/update-product/update-product.component';
+import { ViewProductComponent } from './components/view-product/view-product.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { HomeComponent } from './components/home/home.component';
     LoginComponent,
     ProductDetailComponent,
     NewProductDetailComponent,
-    HomeComponent
+    HomeComponent,
+    AddProductComponent,
+    CheckoutComponent,
+    UpdateProductComponent,
+    ViewProductComponent
   ],
   imports: [
     BrowserModule,

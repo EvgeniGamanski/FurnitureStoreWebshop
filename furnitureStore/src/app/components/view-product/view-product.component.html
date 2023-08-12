@@ -1,0 +1,40 @@
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <a style="color: white; margin-left: 40%; font-size: 22px;">View Product Requests</a>
+        <button routerLink="/add-product" class="btn btn-success">Add a request</button>
+    </div>
+</nav>
+
+<div class="container-fluid" style="max-width: 1000px;">
+    <table class="table mt-4 table-striped table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Product image</th> 
+                <th scope="col">Product name</th> 
+                <th scope="col">Product price</th> 
+                <th scope="col">Product category</th> 
+                <th scope="col">Action</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of product">
+                <td><img style="width: 156px;height: 95px;" src="{{item.producturl}}"></td>
+                <td>{{item.productname}}</td>
+                <td>{{item.productprice}}</td>
+                <td>{{item.productcategory}}</td>
+                <td>
+                    <!-- <i routerLink="/update-product/{{item.id}}" class="fa fa-edit"></i>&nbsp;  
+                    <i (click)="deleteproduct(item.id)" class="fa fa-trash"></i>  -->
+                    <button class="btn btn-dark" style="margin-right: 20px;"
+                    routerLink="/update-product/{{item.id}}"
+                    >Edit
+                    </button>
+                    <button class="btn btn-dark"
+                    (click)="deleteproduct(item.id)"
+                    >Delete
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/api/cart.service';
 import { NgToastService } from 'ng-angular-popup';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -10,7 +11,7 @@ import { NgToastService } from 'ng-angular-popup';
 export class CartComponent implements OnInit {
   public products!:any[];
   public grandTotal:number = 0;
-  constructor(private cart: CartService, private toast: NgToastService){}
+  constructor(private cart: CartService, private toast: NgToastService, private router: Router){}
 
   ngOnInit(): void {
     this.cart.GetProduct().subscribe(res=>{
@@ -30,7 +31,7 @@ export class CartComponent implements OnInit {
   }
 
   checkout(){
-    this.toast.success({detail:'Checkout success!',summary:'You will receive a confirmation email!', duration:3000})
+    this.router.navigate(['/checkout']);
     this.cart.removeAllCart();
   }
 }
