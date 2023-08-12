@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
   Check(){
-    if(sessionStorage.getItem('userData')){
+    if(sessionStorage.getItem('loginData')){
       return true;
     }
     else{

@@ -12,6 +12,7 @@ import { AddProductComponent } from './components/add-product/add-product.compon
 import { ViewProductComponent } from './components/view-product/view-product.component';
 import { UpdateProductComponent } from './components/update-product/update-product.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -19,16 +20,16 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: '',redirectTo:'home',pathMatch:'full'},
   {path:'products',component:ProductsComponent},
-  {path:'add-product',component:AddProductComponent},
-  {path:'update-product/:id',component:UpdateProductComponent},
-  {path:'view-product',component:ViewProductComponent},
+  {path:'add-product',component:AddProductComponent, canActivate:[AuthGuard]},
+  {path:'update-product/:id',component:UpdateProductComponent, canActivate:[AuthGuard] },
+  {path:'view-product',component:ViewProductComponent, canActivate:[AuthGuard]},
   {path:'home',component:HomeComponent},
   {path:'products',component:ProductsComponent},
   {path:'cart',component:CartComponent},  
   {path:'new-collection',component:NewComponent},
   {path:'details/:productId',component:ProductDetailComponent},
   {path:'newdetails/:productId',component:NewProductDetailComponent},
-  {path:'checkout',component:CheckoutComponent},
+  {path:'checkout',component:CheckoutComponent, canActivate:[AuthGuard]},
 ];
 
 @NgModule({

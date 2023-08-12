@@ -30,7 +30,7 @@ export class LoginComponent {
             this.router.navigate(['products']);
           }else{
             this.router.navigate(['products']); 
-            let itemName='userData'
+            let itemName='loginData'
             sessionStorage.setItem(itemName, JSON.stringify(this.loginform.value));
           }
         }else{
