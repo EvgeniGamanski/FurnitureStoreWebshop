@@ -18,6 +18,15 @@
       "gender": "male",
       "role": "",
       "isActive": ""
+    },
+    {
+      "id": "petar123",
+      "name": "Petar",
+      "password": "petar123",
+      "email": "petar123@abv.bg",
+      "gender": "male",
+      "role": "",
+      "isActive": ""
     }
   ],
   "products": [
