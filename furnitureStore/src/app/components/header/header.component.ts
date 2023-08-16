@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   constructor(private cart: CartService, public user: UserService,private toast: NgToastService){
   }
   logout(){
-    sessionStorage.clear();
+    localStorage.clear();
   }
   ngOnInit(): void {
     this.cart.GetProduct().subscribe(res=>{

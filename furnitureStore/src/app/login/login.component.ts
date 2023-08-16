@@ -21,25 +21,20 @@ export class LoginComponent {
   });
 
   proceedLogin(){
-    if(this.loginform.valid){
-      this.service.GetUserByCode(this.loginform.value.id).subscribe(item=>{
-        this.result=item;
-        if(this.result.password===this.loginform.value.password){
-          if(this.result.isActive){
-            sessionStorage.setItem('id',this.result.id);
-            this.router.navigate(['products']);
-          }else{
-            this.router.navigate(['products']); 
-            let itemName='loginData'
-            sessionStorage.setItem(itemName, JSON.stringify(this.loginform.value));
-          }
-        }else{
-          alert("Not valid credentials!")
-        }
-      });
-    }else{
-      alert("Invalid data!")
-    }
+      if(this.loginform.valid){ 
+          this.service.GetUserByCode(this.loginform.value.id).subscribe(item=>{
+            this.result=item;
+            if(this.result.password===this.loginform.value.password){
+                this.router.navigate(['products']); 
+                let itemName='loginData';
+                localStorage.setItem(itemName, JSON.stringify(this.loginform.value));
+            }else{
+              alert("Not valid credentials!");
+            }
+          })
+      }else{
+        alert("Invalid data!")
+      }
   }
 }
 

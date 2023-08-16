@@ -15,7 +15,7 @@ export class AuthGuard implements CanActivate{
      | UrlTree 
      | Observable<boolean | UrlTree>
      | Promise<boolean | UrlTree> {
-      if(sessionStorage.getItem('loginData')){
+      if(localStorage.getItem('loginData')){
         return true;
       }  
       else{
