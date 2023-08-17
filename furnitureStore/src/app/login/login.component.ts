@@ -29,8 +29,10 @@ export class LoginComponent {
                 let itemName='loginData';
                 localStorage.setItem(itemName, JSON.stringify(this.loginform.value));
             }else{
-              alert("Not valid credentials!");
+              alert("Invalid password!");
             }
+          },err => {
+            alert("User not found!")
           })
       }else{
         alert("Invalid data!")
