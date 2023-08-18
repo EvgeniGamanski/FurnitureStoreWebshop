@@ -5,7 +5,7 @@
         <br>
         <hr>
         <ng-container *ngFor="let item of productslist">
-        <div class="card col-md-3">
+        <div @fadeIn class="card col-md-3">
 
             <a routerLink="/details/{{item.id}}"> <img src="{{item.image}}" alt=""></a>
             <h5 style="white-space:nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>

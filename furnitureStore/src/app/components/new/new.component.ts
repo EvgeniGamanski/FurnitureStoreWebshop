@@ -3,11 +3,21 @@ import { CartService } from 'src/app/api/cart.service';
 import { ProductsService } from 'src/app/api/products.service';
 import { NgToastService } from 'ng-angular-popup';
 import { UserService } from '../../user.service';
+import { animate, style, transition, trigger } from '@angular/animations';
+
+const enterTransition = transition(':enter',[
+  style({
+    opacity: 0,
+  }),
+  animate('1s ease-in', style({opacity: 1})),
+])
+const fadeIn = trigger('fadeIn', [enterTransition])
 
 @Component({
   selector: 'app-new',
   templateUrl: './new.component.html',
-  styleUrls: ['./new.component.css']
+  styleUrls: ['./new.component.css'],
+  animations: [fadeIn]
 })
 export class NewComponent implements OnInit {
   public productslist:any;

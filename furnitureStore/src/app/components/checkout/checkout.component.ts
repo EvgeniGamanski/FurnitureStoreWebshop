@@ -16,5 +16,5 @@ const fadeIn = trigger('fadeIn', [enterTransition])
   animations: [fadeIn],
 })
 export class CheckoutComponent {
-  isShown=true;
+
 }

@@ -4,8 +4,8 @@
         <p style="padding-top:30px;padding-bottom:30px; text-align: center;">If you're always on-trend, keeping track of new pieces or staying ahead of the curve, you'll love these. Every piece of furniture we sell is handmade and certified for quality. Each week we release designs covering new ground to suit your lifestyle down to its finest details. Come and say hi to our latest releases, and add something fresh to your home.</p>
         <br>
         <hr>
-        <ng-container *ngFor="let item of productslist">
-        <div class="card col-md-3">
+        <ng-container  *ngFor="let item of productslist">
+        <div @fadeIn class="card col-md-3">
 
             <a routerLink="/newdetails/{{item.id}}"> <img src="{{item.image}}" alt=""></a>
             <h5 style="white-space:nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
