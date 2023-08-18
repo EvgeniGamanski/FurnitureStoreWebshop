@@ -1,11 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { productdata } from '../productmodel';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-view-product',
   templateUrl: './view-product.component.html',
-  styleUrls: ['./view-product.component.css']
+  styleUrls: ['./view-product.component.css'],
+  animations: [
+    trigger('slideInLeft', [
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('500ms ease-out', style({ transform: 'translateX(0)' })),
+      ]),
+      transition(":leave", [
+        animate('500ms ease-out', style({ transform: 'translateX(-100%)' })),
+      ])
+    ])
+  ],
 })
 export class ViewProductComponent implements OnInit {
   product: undefined | productdata[];

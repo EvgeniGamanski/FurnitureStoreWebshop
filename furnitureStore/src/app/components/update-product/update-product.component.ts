@@ -2,11 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { productdata } from '../productmodel';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-update-product',
   templateUrl: './update-product.component.html',
-  styleUrls: ['./update-product.component.css']
+  styleUrls: ['./update-product.component.css'],
+  animations: [
+    trigger('slideInLeft', [
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('500ms ease-out', style({ transform: 'translateX(0)' })),
+      ]),
+      transition(":leave", [
+        animate('500ms ease-out', style({ transform: 'translateX(-100%)' })),
+      ])
+    ])
+  ],
 })
 export class UpdateProductComponent implements OnInit {
   dataid:any;

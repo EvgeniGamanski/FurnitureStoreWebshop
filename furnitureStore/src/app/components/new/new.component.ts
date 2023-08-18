@@ -17,7 +17,17 @@ const fadeIn = trigger('fadeIn', [enterTransition])
   selector: 'app-new',
   templateUrl: './new.component.html',
   styleUrls: ['./new.component.css'],
-  animations: [fadeIn]
+  animations: [
+    trigger('slideInLeft', [
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('500ms ease-out', style({ transform: 'translateX(0)' })),
+      ]),
+      transition(":leave", [
+        animate('500ms ease-out', style({ transform: 'translateX(-100%)' })),
+      ])
+    ])
+  ],
 })
 export class NewComponent implements OnInit {
   public productslist:any;

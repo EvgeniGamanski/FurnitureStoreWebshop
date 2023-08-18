@@ -5,19 +5,21 @@ import { NgToastService } from 'ng-angular-popup';
 import { UserService } from '../../user.service';
 import { animate, style, transition, trigger } from '@angular/animations';
 
-const enterTransition = transition(':enter',[
-  style({
-    opacity: 0
-  }),
-  animate('1s ease-in', style({opacity: 1})),
-])
-const fadeIn = trigger('fadeIn', [enterTransition])
-
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css'],
-  animations: [fadeIn],
+  animations: [
+    trigger('slideInLeft', [
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('500ms ease-out', style({ transform: 'translateX(0)' })),
+      ]),
+      transition(":leave", [
+        animate('500ms ease-out', style({ transform: 'translateX(-100%)' })),
+      ])
+    ])
+  ],
 })
 export class ProductsComponent implements OnInit {
   public productslist:any;

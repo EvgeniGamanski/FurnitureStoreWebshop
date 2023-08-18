@@ -3,11 +3,24 @@ import { ApiService } from '../api.service';
 import { Router } from '@angular/router';
 import { productdata } from '../productmodel';
 import { NgToastService } from 'ng-angular-popup';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-add-product',
   templateUrl: './add-product.component.html',
-  styleUrls: ['./add-product.component.css']
+  styleUrls: ['./add-product.component.css'],
+  animations: [
+    trigger('slideInLeft', [
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('500ms ease-out', style({ transform: 'translateX(0)' })),
+      ]),
+      transition(":leave", [
+        animate('500ms ease-out', style({ transform: 'translateX(-100%)' })),
+      ])
+    ])
+  ],
+  
 })
 export class AddProductComponent implements OnInit {
  

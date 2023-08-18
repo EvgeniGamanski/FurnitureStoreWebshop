@@ -1,5 +1,13 @@
 {
-  "product": [],
+  "product": [
+    {
+      "productname": "Sofa",
+      "productprice": 160,
+      "productcategory": "Furniture",
+      "producturl": "https://www.urbanconcepts.ph/wp/wp-content/uploads/2022/09/sterling-prevwhbg.jpg",
+      "id": 1
+    }
+  ],
   "user": [
     {
       "id": "ivan123",
