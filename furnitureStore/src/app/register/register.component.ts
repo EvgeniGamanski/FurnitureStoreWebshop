@@ -17,8 +17,6 @@ export class RegisterComponent {
     password:this.builder.control('',Validators.compose([Validators.required, Validators.minLength(6)])),
     email:this.builder.control('',Validators.compose([Validators.required, Validators.email])),
     gender: this.builder.control('male'),
-    role:this.builder.control(''),
-    isActive:this.builder.control('')
 
   });
   proceedRegister(){

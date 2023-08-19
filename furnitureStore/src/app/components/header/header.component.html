@@ -6,11 +6,11 @@
         <button routerLink="/products" class="btn btn-dark" style="margin-left: 40px;padding-top:4px"><strong style="color:white;font-size:25px;">Products </strong></button>
         <button routerLink="/new-collection" class="btn btn-dark" style="margin-left: 40px;padding-top:4px"><strong style="color:white;font-size:25px;">New Collection</strong></button>
         <button routerLink="/view-product" class="btn btn-dark" style="margin-left: 40px;padding-top:4px"><strong style="color:white;font-size:25px;">Product Request</strong></button>
-        <button *ngIf="!this.user.Check()" routerLink="/register" class="btn btn-light" style="margin-left: 230px;padding-top:4px"><strong style="color:black;font-size:25px;">Register/Login</strong></button>
+        <button *ngIf="!this.user.Check()" routerLink="/register" class="btn btn-light" style="margin-left: 130px;padding-top:4px"><strong style="color:black;font-size:25px;">Register/Login</strong></button>
         <button *ngIf="this.user.Check()" (click)="logout()" routerLink="/register" class="btn btn-light" style="margin-left: 210px;padding-top:4px"><strong style="color:black;font-size:25px;">Logout</strong></button>
     </div>
 
-    <button class="btn btn-dark" *ngIf="this.user.Check()">
+    <button class="btn btn-dark">
         <i style="font-size:30px;" routerLink="/cart" class="fas fa-shopping-cart"> </i> 
         <div style="font-size:10px" class="badge bg-dark">{{totalItem}}</div>
     </button>

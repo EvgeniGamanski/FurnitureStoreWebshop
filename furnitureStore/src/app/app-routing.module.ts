@@ -14,11 +14,12 @@ import { UpdateProductComponent } from './components/update-product/update-produ
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { AuthGuard } from './auth.guard';
 import { ErrorComponent } from './components/error/error.component';
+import { SignGuard } from './signed.guard';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'register', component: RegisterComponent},
-  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent, canActivate:[SignGuard]},
+  {path: 'login', component: LoginComponent, canActivate:[SignGuard]},
   {path: '',redirectTo:'home',pathMatch:'full'},
   {path:'products',component:ProductsComponent},
   {path:'add-product',component:AddProductComponent, canActivate:[AuthGuard]},
@@ -26,7 +27,7 @@ const routes: Routes = [
   {path:'view-product',component:ViewProductComponent, canActivate:[AuthGuard]},
   {path:'home',component:HomeComponent},
   {path:'products',component:ProductsComponent},
-  {path:'cart',component:CartComponent},  
+  {path:'cart',component:CartComponent, canActivate:[AuthGuard]},  
   {path:'new-collection',component:NewComponent},
   {path:'details/:productId',component:ProductDetailComponent},
   {path:'newdetails/:productId',component:NewProductDetailComponent},
