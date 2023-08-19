@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
   }
   logout(){
     localStorage.clear();
+    this.toast.success({detail:'Success',summary:'Logout successful!', duration:4000})
   }
   ngOnInit(): void {
     this.cart.GetProduct().subscribe(res=>{

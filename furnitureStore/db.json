@@ -1,9 +1,9 @@
 {
   "product": [
     {
-      "productname": "Sofa One",
-      "productprice": 160,
-      "productcategory": "Furniture",
+      "productname": "Sofa Two",
+      "productprice": 179,
+      "productcategory": "Sofas",
       "producturl": "https://www.urbanconcepts.ph/wp/wp-content/uploads/2022/09/sterling-prevwhbg.jpg",
       "id": 1
     }
@@ -19,15 +19,6 @@
       "isActive": ""
     },
     {
-      "id": "ivo123",
-      "name": "Ivailo",
-      "password": "ivo123",
-      "email": "ivo123@abv.bg",
-      "gender": "male",
-      "role": "",
-      "isActive": ""
-    },
-    {
       "id": "petar123",
       "name": "Petar",
       "password": "petar123",
@@ -35,6 +26,13 @@
       "gender": "male",
       "role": "",
       "isActive": ""
+    },
+    {
+      "id": "ivo123",
+      "name": "Ivo",
+      "password": "ivo123",
+      "email": "ivo@abv.bg",
+      "gender": "male"
     }
   ],
   "products": [
