@@ -10,8 +10,8 @@
         <button *ngIf="this.user.Check()" (click)="logout()" routerLink="/register" class="btn btn-light" style="margin-left: 210px;padding-top:4px"><strong style="color:black;font-size:25px;">Logout</strong></button>
     </div>
 
-    <button class="btn btn-dark">
-        <i style="font-size:30px;" routerLink="/cart" class="fas fa-shopping-cart"> </i> 
+    <button class="btn btn-dark" routerLink="/cart">
+        <i style="font-size:30px;" class="fas fa-shopping-cart"> </i> 
         <div style="font-size:10px" class="badge bg-dark">{{totalItem}}</div>
     </button>
 </div>
