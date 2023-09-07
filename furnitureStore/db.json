@@ -2,10 +2,17 @@
   "product": [
     {
       "productname": "Sofa",
-      "productprice": 125,
+      "productprice": 130,
       "productcategory": "Furniture",
       "producturl": "https://www.urbanconcepts.ph/wp/wp-content/uploads/2022/09/sterling-prevwhbg.jpg",
       "id": 1
+    },
+    {
+      "productname": "Sofa One",
+      "productprice": 120,
+      "productcategory": "Furniture",
+      "producturl": "https://www.beeversandco.uk/a-bespoke-client-folders/beevers/bespoke-images/product/milan-chaise-corner-sofa-2018.png",
+      "id": 2
     }
   ],
   "user": [
@@ -32,6 +39,13 @@
       "name": "Ivo",
       "password": "ivo123",
       "email": "ivo@abv.bg",
+      "gender": "male"
+    },
+    {
+      "id": "User123",
+      "name": "Name",
+      "password": "user123",
+      "email": "user123@abv.bg",
       "gender": "male"
     }
   ],
