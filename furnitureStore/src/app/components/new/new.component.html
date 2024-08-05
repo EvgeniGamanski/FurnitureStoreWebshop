@@ -11,7 +11,7 @@
                 <a routerLink="/newdetails/{{item.id}}"> <img src="{{item.image}}" alt=""></a>
                 <h5 style="white-space:nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
                 <p style="white-space:nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
-                <p><strong>Price: </strong> {{item.price}} $</p>
+                <p><strong>Price: </strong> {{item.price}} $</p> 
                 <button *ngIf="this.user.Check()" class="btn btn-light shadow-sm" (click)="addToCart(item)" >Add To Cart</button>
                 
             </div>
